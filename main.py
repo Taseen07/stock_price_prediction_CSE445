@@ -1,3 +1,19 @@
+# Define dependencies as a string
+requirements = """
+tensorflow == 2.15.0
+numpy
+pandas
+keras
+joblib
+datetime
+streamlit
+"""
+
+# Use pip to install dependencies within your app
+import pip
+
+pip.main(["install", "-r", requirements])
+
 import streamlit as st
 import pandas as pd
 import numpy as np
